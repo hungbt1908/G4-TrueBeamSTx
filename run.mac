@@ -1,0 +1,16 @@
+# Change the default number of workers (in multi-threading mode) 
+#
+/run/numberOfThreads 4
+
+# Geometry Setups
+#
+/Bremss/Geometry/SetTargetXYDim    2. cm
+/Bremss/Geometry/SetTargetZDim     0.2 cm
+
+# Initialize kernel
+#
+/run/initialize
+
+# Run application
+/run/printProgress -1
+/run/beamOn 1000000
